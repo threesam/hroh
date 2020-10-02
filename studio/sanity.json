@@ -19,7 +19,9 @@
     "dashboard-widget-netlify",
     "@sanity/code-input",
     "content-model-graph",
-    "dark-theme-blue"
+    "dark-theme-blue",
+    "@sanity/vision",
+    "seo-tools"
   ],
   "parts": [
     {
