@@ -8,6 +8,14 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
+import press from './documents/press'
+import praise from './documents/praise'
+import laurel from './documents/laurel'
+import cast from './documents/cast'
+import crew from './documents/crew'
+import patrons from './documents/patrons'
+import resources from './documents/resources'
+import specialThanks from './documents/specialThanks'
 import siteSettings from './documents/siteSettings'
 
 // Object types
@@ -16,6 +24,7 @@ import bioPortableText from './objects/bioPortableText'
 import excerptPortableText from './objects/excerptPortableText'
 import mainImage from './objects/mainImage'
 import authorReference from './objects/authorReference'
+import person from './objects/person'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,9 +37,18 @@ export default createSchema({
     // in the studio.
     siteSettings,
     post,
+    press,
+    praise,
+    laurel,
     category,
     author,
+    cast,
+    crew,
+    patrons,
+    specialThanks,
+    resources,
     mainImage,
+    person,
     authorReference,
     bodyPortableText,
     bioPortableText,
