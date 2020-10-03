@@ -2,7 +2,7 @@ export default {
     type: 'object',
     name: 'person',
     fieldsets: [
-        { name: 'social', title: 'Social media handles' }
+        { name: 'social', title: 'Social Media' }
     ],
     fields: [
         {
@@ -11,9 +11,20 @@ export default {
             type: 'string'
         },
         {
+            name: 'image',
+            type: 'mainImage',
+            title: 'Image'
+        },
+        {
             name: 'role',
             type: 'string',
             title: 'Role'
+        },
+        {
+            name: 'organization',
+            type: 'string',
+            title: 'Organization',
+            description: 'If applicable'
         },
         {
             name: 'from',
@@ -21,22 +32,10 @@ export default {
             title: 'From'
         },
         {
-            title: 'Twitter',
-            name: 'twitter',
-            type: 'string',
-            fieldset: 'social'
-        },
-        {
-            title: 'Instagram',
-            name: 'instagram',
-            type: 'string',
-            fieldset: 'social'
-        },
-        {
-            title: 'Facebook',
-            name: 'facebook',
-            type: 'string',
+            name: 'socialHandles',
+            type: 'socialHandles',
+            title: 'Links',
             fieldset: 'social'
         }
-    ]
+    ],
 }

@@ -4,14 +4,14 @@ export default {
     title: 'Praise',
     fields: [
         {
-            name: 'publication',
-            type: 'string',
-            title: 'Publication'
-        },
-        {
             name: 'reviewer',
             type: 'string',
             title: 'Reviewer'
+        },
+        {
+            name: 'publication',
+            type: 'string',
+            title: 'Publication/Role'
         },
         {
             name: 'review',
@@ -23,5 +23,13 @@ export default {
             type: 'url',
             title: 'Link'
         }
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'reviewer'
+        },
+        prepare({ title }) {
+            return { title }
+        }
+    }
 }

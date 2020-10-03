@@ -10,6 +10,12 @@ export default {
       title: 'Title'
     },
     {
+      name: 'image',
+      type: 'mainImage',
+      title: 'Site Image',
+      description: 'main branding'
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description',

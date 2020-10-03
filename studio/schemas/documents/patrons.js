@@ -4,6 +4,11 @@ export default {
     title: 'Patrons',
     fields: [
         {
+            name: 'message',
+            type: 'bodyPortableText',
+            title: 'Message'
+        },
+        {
             name: 'patron',
             type: 'array',
             title: 'Patron',
@@ -11,5 +16,10 @@ export default {
                 { type: 'string' }
             ]
         }
-    ]
+    ],
+    preview: {
+        prepare() {
+            return { title: 'Patrons' }
+        }
+    }
 }
