@@ -16,6 +16,7 @@ import crew from './documents/crew'
 import patrons from './documents/patrons'
 import resources from './documents/resources'
 import specialThanks from './documents/specialThanks'
+import screening from './documents/screening'
 import siteSettings from './documents/siteSettings'
 
 // Object types
@@ -38,6 +39,7 @@ export default createSchema({
     // in the studio.
     siteSettings,
     post,
+    screening,
     press,
     praise,
     laurel,

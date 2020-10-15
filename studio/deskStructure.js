@@ -8,9 +8,10 @@ import MdPraise from 'react-icons/lib/md/favorite'
 import MdPatron from 'react-icons/lib/md/attach-money'
 import MdLaurel from 'react-icons/lib/md/radio'
 import MdCategories from 'react-icons/lib/md/loupe'
+import MdFilm from 'react-icons/lib/md/flash-auto'
 
 const hiddenDocTypes = listItem =>
-  !['category', 'author', 'post', 'siteSettings', 'laurel', 'press', 'praise', 'cast', 'crew', 'patrons', 'resources', 'specialThanks'].includes(listItem.getId())
+  !['category', 'author', 'post', 'siteSettings', 'laurel', 'press', 'praise', 'cast', 'crew', 'patrons', 'resources', 'specialThanks', 'screening'].includes(listItem.getId())
 
 export default () =>
   S.list()
@@ -26,6 +27,11 @@ export default () =>
         .documentId('siteSettings')
         ),
         S.listItem()
+        .title('Screening')
+        .schemaType('screening')
+        .icon(MdFilm)
+        .child(S.documentTypeList('screening').title('Screening')),
+      S.listItem()
           .title('Blog posts')
           .schemaType('post')
           .icon(MdBeach)
