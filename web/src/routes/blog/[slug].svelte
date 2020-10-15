@@ -9,6 +9,8 @@
     const filter = '*[_type == "post" && slug.current == $slug][0]';
     const projection = `{
       ...,
+      "image": mainImage.asset->url,
+      "alt": mainImage.alt,
       body[]{
         ...,
         children[]{
@@ -30,7 +32,10 @@
 </script>
 
 <script>
+  import Image from '../../components/Image.svelte'
+
   export let post;
+  const {title, image: url, alt, body} = post
 </script>
 
 <style>
@@ -58,11 +63,13 @@
 </style>
 
 <svelte:head>
-  <title>{post.title}</title>
+  <title>{title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<h1>{title}</h1>
+
+<Image {url} {alt} />
 
 <div class="content">
-  <BlockContent blocks={post.body} {serializers} />
+  <BlockContent blocks={body} {serializers} />
 </div>
