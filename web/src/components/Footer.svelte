@@ -1,15 +1,29 @@
 <style>
     footer {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: var(--nav-height);
+        /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)); */
         background: black;
-        position: absolute;
-        padding: 2rem;
     }
-    h1 {
-        color: white;
+
+    span {
+        color: silver;
+        font-size: 0.75rem;
+        opacity: 0.8;
+    }
+
+    a {
+        color: var(--emphasized-text);
+        opacity: 0.5
+    }
+
+    a:hover {
+        opacity: 1;
     }
 </style>
 
 <footer>
-    <h1>Contact Form</h1>
+    <span>© 2020 Eleanor Goldfield | site by <a href="https://threesam.com" target="_blank" rel="noopener noreferrer">Sam</a></span>
 </footer>

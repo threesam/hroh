@@ -5,7 +5,12 @@
 }
 
 :root {
-  --nav-height: 3rem;
+    --nav-color: rgba(20, 20, 1, 1);
+    --nav-color-secondary: rgba(0, 0, 0, 0);
+    --nav-height: 3rem;
+    --main-font-col: rgb(236, 231, 206);
+    --emphasized-text: #EAA221;
+    --bshadow-color: rgba(100, 100, 100, 0.3);
 }
 
 body {
