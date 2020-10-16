@@ -21,9 +21,13 @@
         object-fit: cover;
         z-index: -10;
     }
+    h1 {
+        font-size: 3.5rem;
+    }
 </style>
 
 <div>
     <img {src} {alt} />
     <h1 in:fade>Hard Road of Hope</h1>
+    <slot />
 </div>
