@@ -1,4 +1,5 @@
 <script>
+    import {fade} from 'svelte/transition'
     export let src
     export let alt
 </script>
@@ -10,7 +11,7 @@
         place-content: center;
         width: 100%;
         height: calc(100vh - 3rem);
-        background: rgba(0,0,0,0.9);
+        background: rgba(0,0,0,0.69);
         color: orange;
     }
     img {
@@ -24,5 +25,5 @@
 
 <div>
     <img {src} {alt} />
-    <h1>Hard Road of Hope</h1>
+    <h1 in:fade>Hard Road of Hope</h1>
 </div>

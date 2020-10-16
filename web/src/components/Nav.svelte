@@ -14,13 +14,15 @@
 		display: flex;
 		flex-flow: row;
 		height: 100%;
+		justify-content: space-between;
+		padding: 0 2rem;
+		max-width: 400px;
 	}
 
 	li {
 		display: grid;
 		place-content: center;
 		list-style-type: none;
-		margin: 0 1rem;
 		height: 3rem;
 	}
 	a {
