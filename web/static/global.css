@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --nav-height: 3rem;
+}
+
 body {
 	margin: 0;
 	padding: 0;

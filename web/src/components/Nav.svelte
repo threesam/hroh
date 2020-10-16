@@ -4,11 +4,10 @@
 
 <style>
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		background: rgba(0,0,0,0.9);
 		color: white;
-		height: 3rem;
+		height: var(--nav-height);
 	}
 
 	ul {
@@ -44,6 +43,6 @@
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel="prefetch" class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
+		<li class='{segment === "blog" ? "selected" : ""}'><a rel="prefetch" href='blog'>blog</a></li>
 	</ul>
 </nav>
