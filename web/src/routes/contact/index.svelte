@@ -1,3 +1,15 @@
+<script>
+    import {onMount} from 'svelte'
+
+    import sketch from './sketch.js'
+
+   let P5Sketch
+  onMount(async () => {
+    const mod = await import("../../components/CanvasP5.svelte")
+    P5Sketch = mod.default
+  })
+</script>
+
 <main class="container box-shadow">
     <article class="contact-article">
         <div>
@@ -7,7 +19,10 @@
                 discuss.</p>
             <br>
         </div>
+
+        
         <div id="brand-ctn">
+            <svelte:component this={P5Sketch} {sketch} id="contact-sketch"/>
             <noscript><img id="logo" src="images/actOut.png" alt="brand symbol for ActOut!"></noscript>
         </div>
         <div class="social-links">
