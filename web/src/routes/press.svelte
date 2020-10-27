@@ -1,3 +1,26 @@
+<script context="module">
+    import client from '../sanityClient'
+    export function preload({ params }) {
+      const filter = `*[_type == 'press']|order(_createdAt desc){
+            href,
+            title
+          }`
+      const query = filter //+ projection
+      return client
+        .fetch(query)
+        .then((press) => {
+          return { press }
+        })
+        .catch((err) => this.error(500, err))
+    }
+  </script>
+
+<script>
+	import PressLink from "./_PressLink.svelte"
+					
+    export let press
+</script>
+
 <main class="container press-container">
     <div class="praise">
         <h2>Praise</h2>
@@ -71,41 +94,9 @@
     <div class="press">
         <h2>Press</h2>
         <ul>
-            <li class="subscribe-link"><a href="https://globaljusticeecology.org/review-of-hard-road-of-hope/"
-                    target="_blank" rel="noopener noreferrer">Global Justice Ecology Project</a></li>
-            <li class="subscribe-link"><a
-                    href="https://www.mintpressnews.com/podcast-eleanor-goldfield-west-virginia-coal-communities/269302/#.XwnMVkadI6E.facebook"
-                    target="_blank" rel="noopener noreferrer">Mintcast with Mnar Muhawesh</a></li>
-            <li class="subscribe-link"><a href="https://youtu.be/79Igdd1XOiY?t=43m" target="_blank"
-                    rel="noopener noreferrer">
-                    Breakthrough News with Eugene Puryear</a></li>
-            <li class="subscribe-link"><a href="https://youtu.be/9NjhCtFBSk4" target="_blank"
-                    rel="noopener noreferrer">Redacted Tonight with Lee Camp</a></li>
-            <li class="subscribe-link"><a href="https://youtu.be/hrdObKBYvnM?t=14m50s" target="_blank"
-                    rel="noopener noreferrer">
-                    Economic Update with Prof. Richard Wolff</a></li>
-            <li class="subscribe-link"><a
-                    href="http://www.internetradiopros.com/revolutionary/?name=2020-06-22_zrevolutionary062220.mp3&t=17m24s"
-                    target="_blank" rel="noopener noreferrer">Revolutionary Road Radio</a></li>
-            <li class="subscribe-link"><a
-                    href="https://www.spreaker.com/user/radiosputnik/protests-grow-monuments-fall-is-the-mili?t=86m02s"
-                    target="_blank" rel="noopener noreferrer">Loud & Clear</a></li>
-            <li class="subscribe-link"><a
-                    href="https://www.spreaker.com/user/radiosputnik/minneapolis-cop-filmed-killing-george-fl"
-                    target="_blank" rel="noopener noreferrer">
-                    By Any Means Necessary</a></li>
-            <li class="subscribe-link"><a
-                    href="https://www.spreaker.com/user/radiosputnik/tehran-to-the-rescue-virus-hiding-propag"
-                    target="_blank" rel="noopener noreferrer">
-                    Political Misfits</a></li>
-            <li class="subscribe-link"><a href="https://roarmag.org/2020/05/29/hard-road-of-hope/" target="_blank"
-                    rel="noopener noreferrer">ROAR Magazine</a></li>
-            <li class="subscribe-link"><a
-                    href="https://www.projectcensored.org/robin-andersen-and-eleanor-goldfield/?t=27m43s"
-                    target="_blank" rel="noopener noreferrer">Project Censored with Mickey Huff</a></li>
-            <li class="subscribe-link"><a
-                    href="https://popularresistance.org/hard-road-of-hope-shows-west-virginia-is-a-mirror-of-the-united-states/"
-                    target="_blank" rel="noopener noreferrer">Interview on Popular Resistance</a></li>
+            {#each press as p}
+            <PressLink {...p}/>
+            {/each}
         </ul>
     </div>
 </main>
