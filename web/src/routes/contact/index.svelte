@@ -13,7 +13,7 @@
 <main class="container box-shadow">
     <article class="contact-article">
         <div>
-            <p>“Hard Road of Hope” is available for screenings and educational purposes. Please
+            <p>“Hard Road of Hope” is available for screenings and educational purposes. The order form on this site is for Personal Use only. Please
                 contact us at
                 <a class="aka" href="https://artkillingapathy.com/contact" target="_blank">ArtKillingApathy</a> to
                 discuss.</p>
