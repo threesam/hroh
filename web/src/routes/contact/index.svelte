@@ -22,7 +22,7 @@
         </div>
 
         
-        <div in:fade={{duration: 2000}} id="brand-ctn">
+        <div in:fade={{duration: 1000, delay: 300}} id="brand-ctn">
             <svelte:component this={P5Sketch} {sketch} id="contact-sketch"/>
             <noscript><img id="logo" src="images/actOut.png" alt="brand symbol for ActOut!"></noscript>
         </div>
