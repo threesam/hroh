@@ -1,52 +1,50 @@
 <script context="module">
     import client from '../sanityClient'
     export function preload({ params }) {
-      const filter = `*[_type == 'press']|order(_createdAt desc){
+      const pressFilter = `*[_type == 'press']|order(_createdAt desc){
             href,
             title
           }`
-      const query = filter //+ projection
+
+      const praiseFilter = `*[_type == 'praise']|order(_createdAt asc){
+          href,
+          publication,
+          reviewer,
+          "body": review[]{
+              ...,
+              children[]{
+                  ...
+              }
+          }
+      }`
+
+
+      const query = `{
+          "press": ${pressFilter},
+          "praise": ${praiseFilter}
+      }`
       return client
         .fetch(query)
-        .then((press) => {
-          return { press }
+        .then((data) => {
+          return { data }
         })
         .catch((err) => this.error(500, err))
     }
   </script>
 
 <script>
+	import PraiseCard from "./_PraiseCard.svelte"
+					
 	import PressLink from "./_PressLink.svelte"
 					
-    export let press
+    export let data
+    const {press, praise} = data
 </script>
 
 <main class="container press-container">
     <div class="praise">
         <h2>Praise</h2>
-        <div class="card">
-            <p>
-                "A workhorse documentary that's blue collar in presentation yet fiercely strong in its voice of
-                advocacy and truth."
-                <br>
-                <br>
-                "Hard Road of Hope doesn't speak for West Virginians but with West Virginians and, perhaps most
-                refreshingly, the film avoids the histrionic stereotypes so often found in this type of film and
-                instead presents West Virginians who are well informed, passionate, educated, and passionately proud
-                of their West Virginia roots."
-                <br>
-                <br>
-                "Grassroots activists, including Goldfield herself, are uniting for the sake of basic human rights
-                amidst the beauty of the hills of Southern Appalachia so beautifully captured by Goldfield's lens.
-                It's a beauty that remains even amidst, as Goldfield writes, "the methane-streaked highways of the
-                fracking corridor" and the "decapitated peaks to the winding holler roads.""
-            </p>
-            <a style="display:block; margin-top: 1rem; text-decoration: underline;"
-                href="https://theindependentcritic.com/hard_road_of_hope" target="_blank" rel="noopener noreferrer">
-                <p class="aka" style="color: var(--main-font-col);">full review</p>
-            </a>
-            <p><span>- Richard Propes</span> The Independent Critic</p>
-        </div>
+        <PraiseCard {praise} />
         <div class="card">
             <p>"Hard Road of Hope explains the peoples’ history of the region through the voices of people who still
                 remember...The stories in this documentary are many and watching it unravels what should be in front

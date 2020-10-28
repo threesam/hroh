@@ -34,5 +34,5 @@
 {#each posts as {title, author, image, alt, body}}
     <h2>{title}</h2>
     <h3>{author}</h3>
-    <BlockContent {body} {serializers} />
+    <BlockContent blocks={body} {serializers} />
 {/each}
