@@ -7646,6 +7646,12 @@ react-icons@3.10.0:
   dependencies:
     camelcase "^5.0.0"
 
+react-icons@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.npmjs.org/react-icons/-/react-icons-3.11.0.tgz#2ca2903dfab8268ca18ebd8cc2e879921ec3b254"
+  dependencies:
+    camelcase "^5.0.0"
+
 react-intl@^2.2.2:
   version "2.9.0"
   resolved "https://registry.npmjs.org/react-intl/-/react-intl-2.9.0.tgz#c97c5d17d4718f1575fdbd5a769f96018a3b1843"

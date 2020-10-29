@@ -1,14 +1,6 @@
 import S from '@sanity/desk-tool/structure-builder'
-import MdSettings from 'react-icons/lib/md/settings'
-import MdPerson from 'react-icons/lib/md/person'
-import MdBeach from 'react-icons/lib/md/beach-access'
-import MdStar from 'react-icons/lib/md/star'
-import MdPress from 'react-icons/lib/md/free-breakfast'
-import MdPraise from 'react-icons/lib/md/favorite'
-import MdPatron from 'react-icons/lib/md/attach-money'
-import MdLaurel from 'react-icons/lib/md/radio'
-import MdCategories from 'react-icons/lib/md/loupe'
-import MdFilm from 'react-icons/lib/md/flash-auto'
+
+import { MdSettings, MdPerson, MdBeachAccess, MdStar, MdFreeBreakfast, MdFavorite, MdAttachMoney, MdRadio, MdLoupe, MdFlashAuto } from 'react-icons/md'
 
 const hiddenDocTypes = listItem =>
   !['category', 'author', 'post', 'siteSettings', 'laurel', 'press', 'praise', 'cast', 'crew', 'patrons', 'resources', 'specialThanks', 'screening'].includes(listItem.getId())
@@ -29,12 +21,12 @@ export default () =>
         S.listItem()
         .title('Screening')
         .schemaType('screening')
-        .icon(MdFilm)
+          .icon(MdFlashAuto)
         .child(S.documentTypeList('screening').title('Screening')),
       S.listItem()
           .title('Blog posts')
           .schemaType('post')
-          .icon(MdBeach)
+        .icon(MdBeachAccess)
           .child(S.documentTypeList('post').title('Blog posts')),
         S.listItem()
           .title('Authors')
@@ -53,32 +45,32 @@ export default () =>
         .child(S.documentTypeList('crew').title('Crew')),
       S.listItem()
         .title('Patrons')
-        .icon(MdPatron)
+        .icon(MdAttachMoney)
         .schemaType('patrons')
         .child(S.documentTypeList('patrons').title('Patrons')),
       S.listItem()
         .title('Laurels')
-        .icon(MdLaurel)
+        .icon(MdRadio)
         .schemaType('laurel')
         .child(S.documentTypeList('laurel').title('Laurels')),
       S.listItem()
         .title('Press')
-        .icon(MdPress)
+        .icon(MdFreeBreakfast)
         .schemaType('press')
         .child(S.documentTypeList('press').title('Press')),
       S.listItem()
         .title('Praise')
-        .icon(MdPraise)
+        .icon(MdFavorite)
         .schemaType('praise')
         .child(S.documentTypeList('praise').title('Praise')),
       S.listItem()
         .title('Special Thanks')
-        .icon(MdPraise)
+        .icon(MdFavorite)
         .schemaType('specialThanks')
         .child(S.documentTypeList('specialThanks').title('Special Thanks')),
       S.listItem()
         .title('Categories')
-        .icon(MdCategories)
+        .icon(MdLoupe)
         .schemaType('category')
         .child(S.documentTypeList('category').title('Categories')),
       S.listItem()
