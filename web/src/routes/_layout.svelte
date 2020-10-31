@@ -13,6 +13,8 @@
 
 <Nav {segment}/>
 
-<slot></slot>
+<main class="container">
+	<slot></slot>
+</main>
 
 <Footer />
