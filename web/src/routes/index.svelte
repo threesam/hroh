@@ -32,7 +32,7 @@
 	import Laurel from "./_Laurel.svelte"
 
 	export let hero
-	const { title, author, description} = hero
+	const { title, author } = hero
 </script>
 
 <svelte:head>
@@ -41,12 +41,14 @@
 
 <Hero {hero} />
 
-<div>
-	<h2><span>A film by</span>{author}</h2>
-	<BlockContent blocks={description} {serializers} />
+<div class="container">
+	<span>A film by</span>
+	<h2>{author}</h2>
+	<p>Ex nostrud ipsum dolor aliquip consequat ullamco dolor exercitation ad. Consectetur veniam veniam reprehenderit sit eiusmod aliqua veniam exercitation consectetur Lorem nisi elit pariatur deserunt. Minim cillum qui ea duis irure anim sunt sint do pariatur nostrud consectetur laborum.</p>
+	<Gumroad/>
+	<h3>Trailers</h3>
+	<Trailers/>
 </div>
 
 	
-	<!-- <Gumroad/>
-	<Trailers/>
-	<SubscribeButton/> -->
+	<SubscribeButton/>

@@ -2,6 +2,8 @@
     import {onMount} from 'svelte'
     import {fade} from 'svelte/transition'
 
+    	import SubscribeButton from "./_SubscribeButton.svelte"		
+
     import sketch from './sketch.js'
 
    let P5Sketch
@@ -21,6 +23,7 @@
             <br>
         </div>
 
+        <SubscribeButton/>
         
         <div in:fade={{duration: 2000}} id="brand-ctn">
             <svelte:component this={P5Sketch} {sketch} id="contact-sketch"/>
