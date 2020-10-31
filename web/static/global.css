@@ -106,7 +106,6 @@ nav {
     background: linear-gradient(var(--nav-color), var(--nav-color-secondary));
     top: 0;
     left: 0;
-    position: fixed;
     height: var(--nav-height);
     width: 100%;
 }
