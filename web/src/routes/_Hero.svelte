@@ -1,8 +1,9 @@
 <script>
-	import {fade} from 'svelte/transition'
+	import {fade, blur} from 'svelte/transition'
 	import Laurel from './_Laurel.svelte'
 	export let hero
-	const {title, image, alt} = hero
+	const {laurels, settings} = hero
+	const {title, image, alt} = settings
 </script>
 
 <style>
@@ -14,6 +15,13 @@
 		place-content: center;
 		text-align: center;
 		background-color: rgba(0,0,0,0.5);
+	}
+
+	section {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 0.25rem;
+		padding: 0 2rem;
 	}
 
 	img {
@@ -33,6 +41,10 @@
 
 <div>
 	<h1 in:fade={{duration: 2000}} id="{title}">{title}</h1>
-	<Laurel/>
+	<section in:blur={{delay: 2000, duration: 1000}}>
+		{#each laurels as laurel}
+		<Laurel {laurel} />
+		{/each}
+	</section>
 	<img src={image} {alt}>
 </div>

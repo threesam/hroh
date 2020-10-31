@@ -146,9 +146,8 @@ nav {
     max-width: 800px;
     min-height: calc(100vh - (2 * var(--nav-height)));
     background-color: rgba(00, 00, 00, 0.7);
-    padding: 0 1rem;
+    padding: 1rem;
     margin: auto;
-    margin-top: calc(var(--nav-height));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,31 +274,18 @@ nav {
     font-size: 2.5rem;
     margin-top: 1rem;
 }
-
-.awards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0.25rem;
-    justify-content: center;
-    width: max-content;
-    height: min-content;
-    filter: invert();
-    opacity: 0.8;
-    margin: -0.5rem 0 1rem 0;
-}
-
 .award {
     display: inline-block;
-    width: 3rem;
-    margin: 0 0.5rem;
+    width: 100%;
 }
-
+/* 
 @media(min-width: 800px) {
     .award {
         width: 5rem;
     }
 }
+
+*/
 
 #gumroad-cta {
     margin-bottom: 1rem;

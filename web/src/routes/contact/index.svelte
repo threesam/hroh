@@ -2,7 +2,7 @@
     import {onMount} from 'svelte'
     import {fade} from 'svelte/transition'
 
-    	import SubscribeButton from "./_SubscribeButton.svelte"		
+    import SubscribeButton from "../_SubscribeButton.svelte"		
 
     import sketch from './sketch.js'
 
