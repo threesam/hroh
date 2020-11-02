@@ -1,9 +1,13 @@
 <script>
+	import {onMount} from 'svelte'
 	import {fade, blur} from 'svelte/transition'
 	import Laurel from './_Laurel.svelte'
 	export let hero
 	const {laurels, settings} = hero
 	const {title, image, alt} = settings
+
+	let show = false
+	onMount(()=> show = true)
 </script>
 
 <style>
@@ -40,11 +44,13 @@
 </style>
 
 <div>
-	<h1 in:fade={{duration: 2000}} id="{title}">{title}</h1>
+	{#if show}
+	<h1 in:fade={{delay: 500, duration: 1500}} id="{title}">{title}</h1>
 	<section in:blur={{delay: 2000, duration: 1000}}>
 		{#each laurels as laurel}
 		<Laurel {laurel} />
 		{/each}
 	</section>
+	{/if}
 	<img src={image} {alt}>
 </div>
