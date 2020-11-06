@@ -1,14 +1,13 @@
 <script>
 	import CallToAction from "./_CallToAction.svelte"
 					
-					
 	import {onMount} from 'svelte'
 	import {fade} from 'svelte/transition'
-	import Gumroad from "./_Gumroad.svelte"	
 	export let hero
 	const {settings} = hero
 	const {title, image, alt} = settings
 
+	// show order button
 	let show = false
 	onMount(()=> show = true)
 </script>
@@ -36,13 +35,6 @@
 
 	h1 {
 		font-size: 3rem;
-	}
-	a {
-		margin-left: 0.5rem;
-		color: var(--emphasized-text);
-	}
-	a:hover {
-		text-decoration: underline;
 	}
 </style>
 

@@ -1,7 +1,5 @@
 <script context="module">
   import client from '../sanityClient'
-  import BlockContent from '@movingbrands/svelte-portable-text'
-  import serializers from '../components/serializers'  
   export function preload() {
     const settings = `*[_type == 'siteSettings'][0]{
 		  "image": image.asset->url,
@@ -15,7 +13,6 @@
 		"image": mainImage.asset->url,
 		"alt": mainImage.alt
 	}`
-
 
 	const query = `{
 		"settings": ${settings},
@@ -32,9 +29,8 @@
 </script>
 
 <script>
-	import Hero from "./_Hero.svelte"
-					
 	import Laurels from "./_Laurels.svelte"
+	import Hero from "./_Hero.svelte"			
 
 	export let hero
 	const {settings, laurels} = hero
@@ -42,6 +38,9 @@
 </script>
 
 <style>
+	article {
+		min-height: calc(100vh - var(--nav-height));
+	}
 	a {
 		color: var(--emphasized-text);
 		margin: 3rem 0;
