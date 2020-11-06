@@ -1,9 +1,12 @@
 <script>
+	import CallToAction from "./_CallToAction.svelte"
+					
+					
 	import {onMount} from 'svelte'
-	import {fade, blur} from 'svelte/transition'
-	import Laurel from './_Laurel.svelte'
+	import {fade} from 'svelte/transition'
+	import Gumroad from "./_Gumroad.svelte"	
 	export let hero
-	const {laurels, settings} = hero
+	const {settings} = hero
 	const {title, image, alt} = settings
 
 	let show = false
@@ -21,13 +24,6 @@
 		background-color: rgba(0,0,0,0.5);
 	}
 
-	section {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 0.25rem;
-		padding: 0 2rem;
-	}
-
 	img {
 		position: absolute;
 		top: 0;
@@ -41,16 +37,19 @@
 	h1 {
 		font-size: 3rem;
 	}
+	a {
+		margin-left: 0.5rem;
+		color: var(--emphasized-text);
+	}
+	a:hover {
+		text-decoration: underline;
+	}
 </style>
 
 <div>
 	{#if show}
 	<h1 in:fade={{delay: 500, duration: 1500}} id="{title}">{title}</h1>
-	<section in:blur={{delay: 2000, duration: 1000}}>
-		{#each laurels as laurel}
-		<Laurel {laurel} />
-		{/each}
-	</section>
+	<CallToAction/>
 	{/if}
 	<img src={image} {alt}>
 </div>

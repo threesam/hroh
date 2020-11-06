@@ -34,13 +34,22 @@
 <script>
 	import Hero from "./_Hero.svelte"
 					
-	import Gumroad from "./_Gumroad.svelte"	
-	import Trailers from "./_Trailers.svelte"	
+	import Laurels from "./_Laurels.svelte"
 
 	export let hero
-	const {settings} = hero
+	const {settings, laurels} = hero
 	const { title, author, description } = settings
 </script>
+
+<style>
+	a {
+		color: var(--emphasized-text);
+		margin: 3rem 0;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+</style>
 
 <svelte:head>
 	<title>{title}</title>
@@ -48,11 +57,10 @@
 
 <Hero {hero} />
 
-<div class="container">
+<article class="container">
+	<Laurels {laurels} />
 	<span>A film by</span>
 	<h2>{author}</h2>
 	<p>{description}</p>
-	<Gumroad/>
-	<h3>Trailers</h3>
-	<Trailers/>
-</div>
+	<a href="/trailers">View Trailers</a>
+</article>
