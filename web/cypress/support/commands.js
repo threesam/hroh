@@ -23,3 +23,8 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("visitWait", (url, options) => {
+    cy.visit(url, options)
+    cy.get('[data-test=loaded]')
+});

@@ -24,7 +24,6 @@
             their past to a broken present and the potential future that we all share.
             It's a hard road of hope, a pot-holed and puddled path past the Kings of coal and gas, but they keep
             walking. We would do well to walk with them for a while – and listen.</p><br>
-        <hr>
     </article> -->
     <article id="synopsis" class="about-article">
         <!-- <h3>Hard Road Of Hope</h3> -->
@@ -60,7 +59,6 @@
             seeks to hold a mirror up to all sacrifice zones, to the isolated folks in pain across the nation. This is an
             American story, an American history – and for the future of all the people who call this place home,
             this is the path we must all walk if we want to thrive, and indeed, survive.</p><br>
-        <hr>
     </article>
     <article id="cast-crew" class="about-article">
         <h2>Cast of characters</h2>
@@ -102,7 +100,6 @@
         </div>
     </article>
     <article id="special-thanks" class="about-article">
-        <hr>
         <br>
         <h2>Special thanks</h2>
         <ul class="list-ctn">
@@ -151,7 +148,6 @@
             West
             Union, and
             Parkersburg, West Virginia.</p><br>
-        <hr>
     </article>
     <article id="about-the-filmmaker">
         <h2>About the Filmmaker</h2>
@@ -165,7 +161,6 @@
         <p>Besides touring, performing and media work, she assists in frontline action organizing and activist
             trainings.</p>
         <br>
-        <hr>
     </article>
     <article id="resources" class="about-article">
         <h2>Resources</h2>

@@ -168,6 +168,9 @@ nav {
 }
 
 /* ABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUT */
+.about-article {
+  margin-bottom: 2rem;
+}
 
 .about-article h1 {
     font-size: 2rem;
