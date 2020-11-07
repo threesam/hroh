@@ -8,6 +8,7 @@
 <style>
 	main {
 		position: relative;
+		min-height: calc(100vh - 2 * var(--nav-height));
 	}
 </style>
 
