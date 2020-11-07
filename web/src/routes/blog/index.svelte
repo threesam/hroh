@@ -41,9 +41,6 @@
 </script>
 
 <style>
-  div {
-    background: none;
-  }
   h2 {
     margin-top: 1rem;
   }
@@ -63,6 +60,9 @@
     filter: grayscale(20%);
     transition: all 0.3s ease-in-out;
   }
+  h3 {
+    text-shadow: 0 0 3px black;
+  }
   img {
     position: absolute;
     top: 0;
@@ -81,7 +81,7 @@
   {#each posts as {title, author, image, alt, slug}}
   <a href={`blog/${slug}`}>
     <h3>{title}</h3>
-    <span>{author}</span>
+    <!-- <span>{author}</span> -->
     <img src={urlFor(image).url()} alt="{alt}">
   </a>
   {/each}
