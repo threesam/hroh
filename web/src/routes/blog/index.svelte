@@ -57,6 +57,7 @@
     border: 0.125rem solid var(--emphasized-text);
     overflow: hidden;
     filter: grayscale(100%);
+    margin-bottom: 2rem;
   }
   a:hover {
     filter: grayscale(20%);
