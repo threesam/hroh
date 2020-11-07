@@ -99,45 +99,6 @@ article {
 .smaller-text {
     font-size: 0.75rem;
 }
-
-/* NAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAVNAV */
-
-nav {
-    background: linear-gradient(var(--nav-color), var(--nav-color-secondary));
-    top: 0;
-    left: 0;
-    height: var(--nav-height);
-    width: 100%;
-}
-
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 100;
-}
-
-.nav-link {
-    width: 100px;
-    font-size: 0.7rem;
-}
-
-.nav-link:hover {
-    color: var(--emphasized-text);
-    text-shadow: 2px 2px 5px var(--nav-color);
-    opacity: 1;
-    -webkit-transition: all 0.1s ease-in;
-    -moz-transition: all 0.1s ease-in;
-    -o-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
-}
-
-.selected-tab {
-    color: var(--emphasized-text);
-    opacity: 0.9;
-}
-
 /* CONTAINERCONTAINERCONTAINERCONTAINERCONTAINERCONTAINERCONTAINERCONTAINERCONTAINER */
 
 .container {
