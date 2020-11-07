@@ -42,11 +42,16 @@
 		min-height: calc(100vh - var(--nav-height));
 	}
 	a {
-		color: var(--emphasized-text);
 		margin: 3rem 0;
+		padding: 2rem;
+		border: 0.125rem dashed var(--emphasized-text);
+		border-radius: 13px;
+		color: var(--emphasized-text);
+		filter: grayscale(100%);
 	}
 	a:hover {
-		text-decoration: underline;
+		filter: grayscale(0%);
+		transition: all 0.3s ease-in-out;
 	}
 </style>
 
