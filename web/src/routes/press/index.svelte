@@ -40,6 +40,12 @@
     const {press, praise} = data
 </script>
 
+<style>
+    .praise h2 {
+        margin-bottom: 0;
+    }
+</style>
+
 <main class="container press-container">
     <div class="praise">
         <h2>Praise</h2>
