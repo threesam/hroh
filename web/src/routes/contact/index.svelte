@@ -17,13 +17,20 @@
     .social-links {
         margin: 2rem;
     }
+
+    @media (min-width: 800px) {
+        article {
+            border: 1px solid #444;
+            padding: 2rem 2rem 0 2rem;
+        }
+    }
 </style>
 
+<div in:fade={{delay: 1000, duration: 1000}} id="brand-ctn">
+    <svelte:component this={P5Sketch} {sketch} id="contact-sketch"/>
+    <noscript><img id="logo" src="images/actOut.png" alt="brand symbol for ActOut!"></noscript>
+</div>
 <article class="contact-article container">
-    <div in:fade={{delay: 1000, duration: 1000}} id="brand-ctn">
-        <svelte:component this={P5Sketch} {sketch} id="contact-sketch"/>
-        <noscript><img id="logo" src="images/actOut.png" alt="brand symbol for ActOut!"></noscript>
-    </div>
     <div>
         <p>“Hard Road of Hope” is available for screenings and educational purposes. Please
             contact us at
