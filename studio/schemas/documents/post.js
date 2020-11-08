@@ -25,7 +25,11 @@ export default {
       name: 'publishedAt',
       type: 'datetime',
       title: 'Published at',
-      description: 'This can be used to schedule post for publishing'
+      description: 'This can be used to schedule post for publishing',
+      options: {
+        dateFormat: 'MM-DD-YYYY',
+        timeFormat: 'HH:mm',
+      }
     },
     {
       name: 'mainImage',
