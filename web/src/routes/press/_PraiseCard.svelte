@@ -1,6 +1,6 @@
 <script>
     import BlockContent from '@movingbrands/svelte-portable-text'
-    import serializers from '../components/serializers'
+    import serializers from '../../components/serializers'
 
     export let review
     const {body, reviewer, href, publication} = review

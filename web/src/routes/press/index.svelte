@@ -1,5 +1,5 @@
 <script context="module">
-    import client from '../sanityClient'
+    import client from '../../sanityClient'
     export function preload({ params }) {
       const pressFilter = `*[_type == 'press']|order(_createdAt desc){
             href,
