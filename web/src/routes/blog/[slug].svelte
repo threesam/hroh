@@ -100,7 +100,7 @@ import serializers from '../../components/serializers'
     <p>by {author}</p>
     <span>{publishedAt.slice(0, 10)}</span>
 </section>
-<div class="container">
+<div class="container block-content">
     <BlockContent blocks={body} {serializers} />
 </div>
 

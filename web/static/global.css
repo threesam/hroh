@@ -388,6 +388,10 @@ article {
 }
 /* MISC */
 
+.block-content p {
+  margin-bottom: 1rem;
+}
+
 .margin-up {
     margin-bottom: 0;
 }
