@@ -7,7 +7,7 @@
 </script>
 			
 <style>
-    div {
+    .card {
         padding: 0.5rem 0;
         margin: 0.5rem 0;
     }
@@ -39,7 +39,9 @@
 </style>
 
 <div class="card">
-    <BlockContent blocks={body} {serializers} />
+    <div class="block-content">
+        <BlockContent blocks={body} {serializers} />
+    </div>
 
     {#if href}
         <a {href} target="_blank" rel="noopener noreferrer">full review</a>            
