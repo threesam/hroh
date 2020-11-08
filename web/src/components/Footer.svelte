@@ -8,7 +8,6 @@
     }
 
     span {
-        color: silver;
         font-size: 0.75rem;
         opacity: 0.8;
     }
