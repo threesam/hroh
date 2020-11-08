@@ -20,6 +20,7 @@
 
 	a {
 		font-size: 0.7rem;
+		min-width: 60px;
 	}
 
 	a:hover {

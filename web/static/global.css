@@ -364,22 +364,6 @@ article {
 .praise h2 {
     margin-bottom: 0;
 }
-
-.card p {
-    font-size: 0.75rem;
-    line-height: 1.5;
-}
-
-.card p:nth-of-type(2) {
-    opacity: 0.69;
-    margin-top: 0.25rem;
-}
-
-.card p span {
-    font-size: 1rem;
-    color: var(--emphasized-text);
-}
-
 .press ul>li {
     border: 1px solid white;
     padding: 0.5rem;
