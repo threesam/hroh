@@ -354,13 +354,6 @@ article {
     padding: 1rem 0;
     font-size: 0.8rem;
 }
-
-.praise>.card {
-    /* border: 1px solid white; */
-    padding: 0.5rem 0;
-    margin: 0.5rem 0;
-}
-
 .praise h2 {
     margin-bottom: 0;
 }
