@@ -1,6 +1,6 @@
 <script>
     import {onMount} from 'svelte'
-    import {fade} from 'svelte/transition'
+    import {fade, fly} from 'svelte/transition'
 
     // import SubscribeButton from "../_SubscribeButton.svelte"		
 
@@ -26,11 +26,11 @@
     }
 </style>
 
-<div in:fade={{delay: 1000, duration: 1000}} id="brand-ctn">
+<div in:fade={{delay: 500, duration: 1500}} id="brand-ctn">
     <svelte:component this={P5Sketch} {sketch} id="contact-sketch"/>
     <noscript><img id="logo" src="images/actOut.png" alt="brand symbol for ActOut!"></noscript>
 </div>
-<article class="contact-article container">
+<article in:fly={{y: -100, duration: 1000}} class="contact-article container">
     <div>
         <p>“Hard Road of Hope” is available for screenings and educational purposes. Please
             contact us at

@@ -70,6 +70,11 @@ import serializers from '../../components/serializers'
 		text-align: center;
 		background-color: rgba(0,0,0,0.5);
     }
+    @media (min-width: 800px) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
 
 	img {
 		position: absolute;
