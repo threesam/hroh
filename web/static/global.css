@@ -131,11 +131,12 @@ p {
 /* ABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUT */
 
 .list-ctn {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    */
     margin-bottom: 1rem;
 }
 #resources ul {

@@ -45,7 +45,7 @@
     <Link href="/blog/synopsis">Synopsis</Link>
     <article id="cast-crew" class="about-article">
         <h2>Cast</h2>
-        <h3 class="smaller-text" style="margin-top: -1rem; margin-bottom: 2rem;">(in order of appearance)</h3>
+        <h3 class="smaller-text" style="margin-top: -1rem; margin-bottom: 1.5rem;">(in order of appearance)</h3>
         <div class="list-ctn">
             <ul id="cast">
                 <li><b>Paul Corbit Brown</b></li>
