@@ -29,6 +29,7 @@
 </script>
 
 <script>
+	import Link from '../components/Link.svelte'
 	import Laurels from "./_Laurels.svelte"
 	import Hero from "./_Hero.svelte"			
 
@@ -40,18 +41,6 @@
 <style>
 	article {
 		min-height: calc(100vh - var(--nav-height));
-	}
-	a {
-		margin: 3rem 0;
-		padding: 2rem;
-		border: 0.125rem dashed var(--emphasized-text);
-		border-radius: 13px;
-		color: var(--emphasized-text);
-		filter: grayscale(100%);
-	}
-	a:hover {
-		filter: grayscale(0%);
-		transition: all 0.3s ease-in-out;
 	}
 </style>
 
@@ -66,5 +55,5 @@
 	<span>A film by</span>
 	<h2>{author}</h2>
 	<p>{description}</p>
-	<a href="/trailers">View Trailers</a>
+	<Link href="/trailers">View Trailers</Link>
 </article>

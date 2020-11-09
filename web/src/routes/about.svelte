@@ -1,4 +1,8 @@
-<main class="container box-shadow">
+<script>
+    import Link from '../components/Link.svelte'
+</script>
+
+<main class="container">
     <!-- <article id="synopsis" class="about-article">
         <h1 class="biggerH">Hard Road Of Hope</h1>
         <p>West Virginia...that's just like the epicenter of the opioid problem, right? And home to a bunch of
@@ -25,41 +29,7 @@
             It's a hard road of hope, a pot-holed and puddled path past the Kings of coal and gas, but they keep
             walking. We would do well to walk with them for a while – and listen.</p><br>
     </article> -->
-    <article id="synopsis" class="about-article">
-        <!-- <h3>Hard Road Of Hope</h3> -->
-        <h2>Synopsis</h2>
-        <p>“It's hard to win around here, it really is,” says Lynn Beatty, a resident of Doddridge County, the
-            epicenter of the fracking boom in West Virginia. A neighbor, Linda Ireland echoes that sentiment:
-            “You feel like there's nothing you can do. Because you have these gas companies with all their
-            resources. And the state seems to be on their side as well.”</p><br>
-        <p>Once the home to the rise and reign of King Coal, West Virginia is now in the crosshairs of a transition
-            of power: from coal to gas. In the midst of this ecologically violent shift, communities are being
-            ripped
-            apart physically, economically and emotionally. The third poorest state in the nation, Paul Corbit
-            Brown, president of Keepers of the Mountain explains the situation. “People here feel very isolated,
-            they feel very forgotten. They feel very neglected, abandoned, abused – and hungry. For more than just
-            food.” It's no surprise then that West Virginia is ranked number one in the opioid crisis. It's not
-            surprising that forgotten folks have latched on to the lies and propaganda peddled by the likes of
-            Trump.</p><br>
-        <p>What is surprising, however, is how much we could learn from West Virginia. Known by many, even
-            inside the state, as a throwaway resource colony filled with nothing but hillbillies and poisoned
-            streams
-            and coal ash, these hills and hollers have a lot to show us about people power, resilience, beauty and
-            indeed, ourselves. More than a microcosm of corporate malfeasance, bad policies and extremist
-            propaganda, West Virginia is home to a radical working class history and the hard work of hoping for
-            and building a better future.
-        </p><br>
-        <p>Purposefully buried and now being dug up and amplified by grassroots activists, this history speaks to
-            the power of the working class coming together – across cultural, race and religious dividing lines to
-            organize together for basic human rights. From the sweeping and majestic hills of Southern Appalachia
-            to the methane-streaked highways of the fracking corridor; from the decapitated peaks to the winding
-            holler roads, this is a story most don't ever hear: a story truly of, for and by the people.</p><br>
-        <p>“Hard Road of Hope” amplifies the voices of these forgotten and proud rednecks – the ones carrying
-            the torch from the first rednecks who tied on red bandanas and marched for their basic human rights. It
-            seeks to hold a mirror up to all sacrifice zones, to the isolated folks in pain across the nation. This is an
-            American story, an American history – and for the future of all the people who call this place home,
-            this is the path we must all walk if we want to thrive, and indeed, survive.</p><br>
-    </article>
+    <Link href="/blog/synopsis">Synopsis</Link>
     <article id="cast-crew" class="about-article">
         <h2>Cast of characters</h2>
         <h3 class="small-text" style="margin-top: -1rem;"><i>in order of appearance</i></h3>
