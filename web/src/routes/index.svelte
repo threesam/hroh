@@ -55,5 +55,5 @@
 	<span>A film by</span>
 	<h2>{author}</h2>
 	<p>{description}</p>
-	<Link href="/trailers">View Trailers</Link>
+	<Link href="/trailers">Trailers</Link>
 </article>

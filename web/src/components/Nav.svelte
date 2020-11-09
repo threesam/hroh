@@ -21,6 +21,8 @@
 	a {
 		font-size: 1rem;
 		min-width: 60px;
+		font-family: 'norwester';
+		font-weight: 100;
 	}
 
 	a:hover {

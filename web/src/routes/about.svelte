@@ -131,7 +131,7 @@
             this.
         </p>
     </article>
-    <article style="border: 0.125rem solid #333; margin-top: 2rem; padding: 2rem;">
+    <article style="border: 0.125rem solid #333; padding: 2rem;">
         <p class="smaller-text">
             Hard Road of Hope was filmed in, at and around Charleston, Pax, Kayford Mountain, Matewan, Clarksburg, West Union, and Parkersburg, West Virginia.
         </p>
