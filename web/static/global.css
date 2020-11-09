@@ -51,10 +51,9 @@ body {
     width: 100vw;
     max-width: 100%;
     line-height: 1.5;
-    font-family: Georgia,
-    Times,
-    'Times New Roman',
-    serif;
+    font-family: Tahoma,
+    Geneva,
+    sans-serif;
 }
 
 a {
@@ -94,11 +93,11 @@ p {
     text-align: left;
 }
 .small-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .smaller-text {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 /* CONTAINERCONTAINERCONTAINERCONTAINERCONTAINERCONTAINERCONTAINERCONTAINERCONTAINER */
 
