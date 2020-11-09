@@ -19,6 +19,7 @@ a:active,
 a:focus {
     outline: 0;
     border: none;
+    outline-style: none;
     -moz-outline-style: none;
 }
 
@@ -36,7 +37,6 @@ a:focus {
         url('fonts/gnuolane_rg.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* BASEBASEBASEBASEBASEBASEBASEBASEBASEBASEBASEBASEBASEBASEBASEBASEBASEBASE */
@@ -49,16 +49,9 @@ html {
 
 body {
     background-color: rgb(10, 10, 10);
-    /* background: url('images/backingIMG.JPG') no-repeat center center fixed; */
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    */
     width: 100vw;
     max-width: 100%;
-    /* z-index: -10; */
+    line-height: 1.5;
 }
 
 a {
@@ -84,7 +77,10 @@ hr {
 }
 
 p {
-    font-family: 'Garamond';
+    font-family: Georgia,
+    Times,
+    'Times New Roman',
+    serif;
     text-align: left;
 }
 .small-text {
@@ -132,23 +128,11 @@ p {
     align-items: center;
     margin-bottom: 1rem;
 }
-
-#synopsis p,
-#about-the-filmmaker p {
-    line-height: 1.5rem;
-}
-
-#special-thanks .list-ctn,
-#special-thanks p {
-    line-height: 1.3em;
-}
-
 #resources ul {
-    font-family: 'gnuolaneregular';
+    /* font-family: 'gnuolaneregular'; */
     text-decoration: underline var(--emphasized-text);
     margin: 1rem;
     text-align: left;
-    line-height: 1.5em;
 }
 
 #resources ul li {
@@ -159,12 +143,6 @@ p {
 #resources ul li a:hover {
     color: var(--emphasized-text);
 }
-
-#cast li,
-#crew li {
-    line-height: 1.2rem;
-}
-
 #cast li:nth-child(even) {
     font-size: 0.66rem;
     margin-bottom: 1rem;
