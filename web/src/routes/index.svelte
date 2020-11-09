@@ -21,7 +21,6 @@
     return client
       .fetch(query)
       .then((hero) => {
-		console.log(hero)
         return { hero }
       })
       .catch((err) => this.error(500, err))

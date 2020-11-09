@@ -35,13 +35,13 @@
     const {title, author, image, alt, publishedAt, slug, excerpt, body} = post
 
     const site = `https://hardroadofhope.com/blog`
-    const url = `${site}/${slug.current}`
+    const url = `${site}/${slug}`
 
     // image url function
     import myConfiguredSanityClient from '../../sanityClient'
     import imageUrlBuilder from '@sanity/image-url'
-import serializers from '../../components/serializers'
-import Link from '../../components/Link.svelte'
+    import serializers from '../../components/serializers'
+    import Link from '../../components/Link.svelte'
 
     const builder = imageUrlBuilder(myConfiguredSanityClient)
 

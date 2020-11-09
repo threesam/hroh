@@ -27,7 +27,6 @@
 
 <script>
   export let posts
-  console.log(posts)
 
   // image url function
   import myConfiguredSanityClient from '../../sanityClient'
