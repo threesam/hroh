@@ -102,7 +102,7 @@ import Link from '../../components/Link.svelte'
 </style>
 
 <section class="hero">
-    <h1 transition:blur>{title}</h1>
+    <h1 in:blur out:blur={{duration: 200}}>{title}</h1>
 	<img src={image} {alt}>
 </section>
 <section class="post-info">
