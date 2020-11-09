@@ -43,7 +43,7 @@ a:focus {
 
 html {
     font-family: 'norwester';
-    font-size: 23px;
+    font-size: 20px;
     color: var(--main-font-col);
 }
 
@@ -84,8 +84,8 @@ hr {
 }
 
 p {
-    font-family: 'gnuolaneregular';
-    text-align: justify;
+    font-family: 'Garamond';
+    text-align: left;
 }
 .small-text {
     font-size: 1rem;
@@ -190,7 +190,7 @@ p {
 /* TITLETITLETITLETITLETITLETITLETITLETITLETITLETITLETITLETITLETITLETITLETITLETITLE */
 
 .vid-wrap {
-    background-image: url('../sources/images/actOut.png');
+    background-image: url('images/actOut.png');
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -218,18 +218,6 @@ p {
     font-size: 2.5rem;
     margin-top: 1rem;
 }
-.award {
-    display: inline-block;
-    width: 100%;
-}
-/* 
-@media(min-width: 800px) {
-    .award {
-        width: 5rem;
-    }
-}
-
-*/
 
 #gumroad-cta {
     margin-bottom: 1rem;

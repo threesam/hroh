@@ -8,7 +8,7 @@
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     #about-the-filmmaker {
         margin-bottom: 0;
@@ -44,8 +44,8 @@
     </article> -->
     <Link href="/blog/synopsis">Synopsis</Link>
     <article id="cast-crew" class="about-article">
-        <h2>Cast of characters</h2>
-        <h3 class="small-text" style="margin-top: -1rem;"><i>in order of appearance</i></h3>
+        <h2>Cast</h2>
+        <h3 class="smaller-text" style="margin-top: -1rem; margin-bottom: 2rem;">(in order of appearance)</h3>
         <div class="list-ctn">
             <ul id="cast">
                 <li><b>Paul Corbit Brown</b></li>
@@ -68,6 +68,9 @@
                 <li>Executive Director, Crushing Colonialism</li>
             </ul>
         </div>
+    </article>
+    <article>
+        <h2>Crew</h2>
         <div class="list-ctn">
             <ul id="crew">
                 <li><i>Directed, Written and Produced by</i></li>
@@ -84,7 +87,7 @@
     </article>
     <article id="special-thanks" class="about-article">
         <br>
-        <h2>Special thanks</h2>
+        <h3 style="font-size: 1.69rem;">Special thanks</h3>
         <ul class="list-ctn">
             <li>Paul Corbit Brown</li>
             <li>Mirijana Beram</li>
@@ -100,14 +103,8 @@
 
         </ul>
 
-        <p class="smaller-text">Our work is made possible via patrons. We have no backing from any media outlet, any
-            organizations
-            or any corporations. We don't do this for the money, and it takes money to get it done. Anything you
-            can give to support our work is hugely appreciated and goes straight in to creating more content
-            like
-            this.</p>
         <br>
-        <h4>A partial list of patrons who made this project possible</h4>
+        <h4>A partial list of patrons</h4>
         <ul class="list-ctn">
             <li>David Paul</li>
             <li>Gimena Sanchez</li>
@@ -126,11 +123,18 @@
             <li>Serena Bergstrom</li>
         </ul>
         <br>
-        <p style="font-family: 'norwester';" class="smaller-text">Filmed in, at and around Charleston, Pax, Kayford
-            Mountain, Matewan, Clarksburg,
-            West
-            Union, and
-            Parkersburg, West Virginia.</p><br>
+        <p class="smaller-text">Our work is made possible via patrons. We have no backing from any media outlet, any
+            organizations
+            or any corporations. We don't do this for the money, and it takes money to get it done. Anything you
+            can give to support our work is hugely appreciated and goes straight in to creating more content
+            like
+            this.
+        </p>
+    </article>
+    <article style="border: 0.125rem solid #333; margin-top: 2rem; padding: 2rem;">
+        <p class="smaller-text">
+            Hard Road of Hope was filmed in, at and around Charleston, Pax, Kayford Mountain, Matewan, Clarksburg, West Union, and Parkersburg, West Virginia.
+        </p>
     </article>
     <article id="about-the-filmmaker">
         <h2>About the Filmmaker</h2>
