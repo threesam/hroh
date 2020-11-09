@@ -2,6 +2,16 @@
     import Link from '../components/Link.svelte'
 </script>
 
+<style>
+    article {
+        margin-bottom: 4rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+</style>
+
 <main class="container">
     <!-- <article id="synopsis" class="about-article">
         <h1 class="biggerH">Hard Road Of Hope</h1>

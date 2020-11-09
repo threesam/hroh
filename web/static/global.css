@@ -123,17 +123,6 @@ p {
 }
 
 /* ABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUT */
-.about-article {
-  margin-bottom: 2rem;
-}
-
-.about-article h1 {
-    font-size: 2rem;
-}
-
-.about-article h2 {
-    font-size: 1.6rem;
-}
 
 .list-ctn {
     display: flex;
