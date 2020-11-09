@@ -5,11 +5,11 @@
         align-items: center;
         height: var(--nav-height);
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+        font-family: 'norwester';
     }
 
     span {
-        font-size: 0.75rem;
-        opacity: 0.8;
+        opacity: 0.7;
     }
 
     a {

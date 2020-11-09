@@ -41,6 +41,7 @@
     import myConfiguredSanityClient from '../../sanityClient'
     import imageUrlBuilder from '@sanity/image-url'
 import serializers from '../../components/serializers'
+import Link from '../../components/Link.svelte'
 
     const builder = imageUrlBuilder(myConfiguredSanityClient)
 
@@ -61,6 +62,9 @@ import serializers from '../../components/serializers'
 </svelte:head>
 
 <style>
+    div {
+        margin-bottom: 1rem;
+    }
 	.hero {
 		position: relative;
 		height: calc(100vh - var(--nav-height));
@@ -107,6 +111,8 @@ import serializers from '../../components/serializers'
 </section>
 <div class="container block-content">
     <BlockContent blocks={body} {serializers} />
+    <Link href="/blog">All Posts</Link>
 </div>
+
 
   
