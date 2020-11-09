@@ -1,22 +1,22 @@
 <script context="module">
         import client from '../sanityClient'
-      
+
         export function preload({ params }) {
-          const filter = `*[_type == 'resources'][0]`
-          const projection = `{
-                ...,
-              }`
-      
-          const query = filter + projection
-      
-          return client
-            .fetch(query)
-            .then((resources) => {
-              return { resources }
-            })
-            .catch((err) => this.error(500, err))
+                const filter = `*[_type == 'resources'][0]`
+                const projection = `{
+                        ...,
+                }`
+
+                const query = filter + projection
+
+                return client
+                        .fetch(query)
+                        .then((resources) => {
+                                return { resources }
+                        })
+                        .catch((err) => this.error(500, err))
         }
-      </script>
+</script>
 
 <script>
         export let resources
@@ -45,8 +45,7 @@
                 <li><a href="https://www.blair100.com/">Blair Mountain Centennial</a></li>
                 <li><a href="https://ohvec.org/larry-gibsons-fight/ ">Keepers of the Mountain - the Story of Larry
                         Gibson & Kayford Mountain</a></li>
-                <li><a
-                        href="https://inthesetimes.com/ittlist/entry/13811/rip_larry_gibson_anti-mtr_activist_and_man_of_kayford_mountain">Overview
-                        of Larry Gibson's work and impact</a></li>
+                <li><a href="https://inthesetimes.com/ittlist/entry/13811/rip_larry_gibson_anti-mtr_activist_and_man_of_kayford_mountain">
+                        Overview of Larry Gibson's work and impact</a></li>
         </ul>
 </article>
