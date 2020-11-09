@@ -103,8 +103,10 @@
 
         </ul>
 
-        <br>
-        <h4>A partial list of patrons</h4>
+    </article>
+    <article>
+        <h2>Patrons</h2>
+        <h3 class="smaller-text" style="margin-top: -1rem; margin-bottom: 1.5rem;">(partial list)</h3>
         <ul class="list-ctn">
             <li>David Paul</li>
             <li>Gimena Sanchez</li>
