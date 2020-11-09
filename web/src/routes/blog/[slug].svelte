@@ -35,7 +35,7 @@
     const {title, author, image, alt, publishedAt, slug, excerpt, body} = post
 
     const site = `https://hardroadofhope.com/blog`
-    const url = `${site}/${slug}`
+    // const url = `${site}/${slug}`
 
     // image url function
     import myConfiguredSanityClient from '../../sanityClient'
@@ -43,14 +43,14 @@
     import serializers from '../../components/serializers'
     import Link from '../../components/Link.svelte'
 
-    const builder = imageUrlBuilder(myConfiguredSanityClient)
+    // const builder = imageUrlBuilder(myConfiguredSanityClient)
 
-    function urlFor(source) {
-        return builder.image(source)
-    }
+    // function urlFor(source) {
+    //     return builder.image(source)
+    // }
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <title>{title}</title>
   <meta property="og:title" content={title} />
   <meta property="og:description" content={excerpt} />
@@ -59,7 +59,7 @@
   <meta property="og:site_name" content="Hard Road of Hope" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image:alt" content={`${title}`} />
-</svelte:head>
+</svelte:head> -->
 
 <style>
     div {
@@ -102,7 +102,7 @@
 </style>
 
 <section class="hero">
-    <h1 in:blur out:blur={{duration: 200}}>{title}</h1>
+    <h1 in:blur>{title}</h1>
 	<img src={image} {alt}>
 </section>
 <section class="post-info">
