@@ -23,7 +23,7 @@
 		<a id="order-link" style="font-size: 1.2rem;" href="https://gumroad.com/l/HardRoadOfHope">Order Now</a>
 	</div>
 	<div class="vid-wrap">
-		<iframe src="https://player.vimeo.com/video/398117986" frameborder="0" allow="autoplay; fullscreen"
+		<iframe title="trailer-main" src="https://player.vimeo.com/video/398117986" frameborder="0" allow="autoplay; fullscreen"
 			allowfullscreen></iframe>
 	</div>
 	<div class="subscribe-ctn">
@@ -32,7 +32,7 @@
 		</a>
 	</div>
 	<div class="vid-wrap">
-		<iframe src="https://player.vimeo.com/video/395858770" frameborder="0" allow="autoplay; fullscreen"
+		<iframe title="trailer-monologue" src="https://player.vimeo.com/video/395858770" frameborder="0" allow="autoplay; fullscreen"
 			allowfullscreen></iframe>
 	</div>
 </main>
