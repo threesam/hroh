@@ -213,7 +213,6 @@ p {
     display: inline-block;
     background-color: rgba(100, 100, 100, 0.3);
     color: var(--main-font-col);
-    padding: 1rem;
     border-radius: 5px;
     opacity: 0.9;
     border: 0.125rem solid var(--main-font-col);
@@ -233,6 +232,12 @@ p {
 
 .subscribe-link:active {
     color: var(--emphasized-text);
+}
+
+.subscribe-link a {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
 }
 
 
