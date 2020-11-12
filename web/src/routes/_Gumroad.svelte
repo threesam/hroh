@@ -1,5 +1,5 @@
 <script>
-	import Button from '../components/Button.svelte'
+	import Cta from '../components/Cta.svelte'
 </script>
 
 <style>
@@ -10,5 +10,5 @@
 
 <div id="gumroad-cta" class="gumroad-product-embed" data-gumroad-product-id="HardRoadOfHope">
 	<!-- <a id="order-link"  href="https://gumroad.com/l/HardRoadOfHope">Order Now</a> -->
-	<Button id="order-link" href="https://gumroad.com/l/HardRoadOfHope">Order Now</Button>
+	<Cta id="order-link" href="https://gumroad.com/l/HardRoadOfHope">Order Now</Cta>
 </div>
