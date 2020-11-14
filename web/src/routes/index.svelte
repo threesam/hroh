@@ -28,7 +28,7 @@
 </script>
 
 <script>
-	import Link from '../components/Link.svelte'
+	import InternalLink from '../components/InternalLink.svelte'
 	import Laurels from "./_Laurels.svelte"
 	import Hero from "./_Hero.svelte"			
 
@@ -54,5 +54,5 @@
 	<span>A film by</span>
 	<h2>{author}</h2>
 	<p>{description}</p>
-	<Link href="/trailers">Trailers</Link>
+	<InternalLink href="/trailers">Trailers</InternalLink>
 </article>

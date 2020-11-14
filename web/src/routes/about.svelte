@@ -33,7 +33,7 @@
     console.log(data)
     const {synopsis, patrons } = data
     const {list: patronList} = patrons
-    import Link from '../components/Link.svelte'
+    import InternalLink from '../components/InternalLink.svelte'
 </script>
 
 <style>
@@ -172,5 +172,5 @@
             trainings.</p>
         <br>
     </article>
-    <Link href="/resources">Resources</Link>
+    <InternalLink href="/resources">Resources</InternalLink>
 </main>

@@ -41,7 +41,7 @@
     import myConfiguredSanityClient from '../../sanityClient'
     import imageUrlBuilder from '@sanity/image-url'
     import serializers from '../../components/serializers'
-    import Link from '../../components/Link.svelte'
+    import InternalLink from '../../components/InternalLink.svelte'
 
     // const builder = imageUrlBuilder(myConfiguredSanityClient)
 
@@ -111,7 +111,7 @@
 </section>
 <div class="container block-content">
     <BlockContent blocks={body} {serializers} />
-    <Link href="/blog">All Posts</Link>
+    <InternalLink href="/blog">All Posts</InternalLink>
 </div>
 
 
