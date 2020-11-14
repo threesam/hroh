@@ -11,7 +11,7 @@
             }
           }`
   
-      const patrons = `*[_type == 'patrons'][0]{"list": patron[]}`
+      const patrons = `*[_type == 'patrons'][0]{"list": patron[], message}`
       const query = `{
           "synopsis": ${synopsis},
           "patrons": ${patrons}
@@ -150,13 +150,9 @@
             {/each}
         </ul>
         <br>
-        <p class="smaller-text">Our work is made possible via patrons. We have no backing from any media outlet, any
-            organizations
-            or any corporations. We don't do this for the money, and it takes money to get it done. Anything you
-            can give to support our work is hugely appreciated and goes straight in to creating more content
-            like
-            this.
-        </p>
+        <div class="block-content">
+            <BlockContent blocks={patrons.message} {serializers} />
+        </div>
     </article>
     <article style="border: 0.125rem solid #333; padding: 2rem;">
         <p class="smaller-text">
