@@ -2,7 +2,8 @@
   import client from '../../sanityClient'
 
   export function preload({ params }) {
-    const filter = `*[_type == 'post']`
+    // return posts without synopsis
+    const filter = `*[_type == 'post' && title != 'Synopsis']`
     const projection = `{
           ...,
           "body": body[].children[],
