@@ -77,12 +77,14 @@
 <div class="container">
 
   <h2>Recent Posts</h2>
-  
-  {#each posts as {title, author, image, alt, slug}}
-  <a href={`blog/${slug}`}>
-    <h3>{title}</h3>
-    <!-- <span>{author}</span> -->
-    <img src={urlFor(image).url()} alt="{alt}">
-  </a>
-  {/each}
+  {#if !posts.length}
+    <p>...coming soon</p>
+  {:else}
+    {#each posts as {title, author, image, alt, slug}}
+    <a href={`blog/${slug}`}>
+      <h3>{title}</h3>
+      <img src={urlFor(image).url()} alt="{alt}">
+    </a>
+    {/each}
+  {/if}
 </div>
