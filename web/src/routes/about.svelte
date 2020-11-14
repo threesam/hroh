@@ -11,8 +11,10 @@
             }
           }`
   
+      const patrons = `*[_type == 'patrons'][0]{"list": patron[]}`
       const query = `{
           "synopsis": ${synopsis},
+          "patrons": ${patrons}
       }`
       return client
         .fetch(query)
@@ -29,7 +31,8 @@
 
     export let data
     console.log(data)
-    const {synopsis} = data
+    const {synopsis, patrons } = data
+    const {list: patronList} = patrons
     import Link from '../components/Link.svelte'
 </script>
 
@@ -142,21 +145,9 @@
         <h2>Patrons</h2>
         <h3 class="smaller-text" style="margin-top: -1rem; margin-bottom: 1.5rem;">(partial list)</h3>
         <ul class="list-ctn">
-            <li>David Paul</li>
-            <li>Gimena Sanchez</li>
-            <li>Debby Zamorski</li>
-            <li>Elaine Smith</li>
-            <li>Shanti Davidson</li>
-            <li>At The Barricades</li>
-            <li>Fred Saberian</li>
-            <li>Bob Martin</li>
-            <li>Bruce Hitchcock</li>
-            <li>Christopher Andrews</li>
-            <li>Dave C</li>
-            <li>Martha Leslie Allen</li>
-            <li>Paul Blair</li>
-            <li>Rael Nidess</li>
-            <li>Serena Bergstrom</li>
+            {#each patronList as patron}
+                <li>{patron}</li>
+            {/each}
         </ul>
         <br>
         <p class="smaller-text">Our work is made possible via patrons. We have no backing from any media outlet, any
