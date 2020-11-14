@@ -1,4 +1,35 @@
+<script context="module">
+    import client from '../sanityClient'
+    export function preload() {
+      const synopsis = `*[_type == 'post' && title == 'Synopsis'][0]{
+            title,
+            body[]{
+                ...,
+                children[]{
+                ...
+                }
+            }
+          }`
+  
+      const query = `{
+          "synopsis": ${synopsis},
+      }`
+      return client
+        .fetch(query)
+        .then((data) => {
+          return { data }
+        })
+        .catch((err) => this.error(500, err))
+    }
+  </script>
+
 <script>
+    import BlockContent from '@movingbrands/svelte-portable-text'
+    import serializers from '../components/serializers'
+
+    export let data
+    console.log(data)
+    const {synopsis} = data
     import Link from '../components/Link.svelte'
 </script>
 
@@ -42,7 +73,10 @@
             It's a hard road of hope, a pot-holed and puddled path past the Kings of coal and gas, but they keep
             walking. We would do well to walk with them for a while – and listen.</p><br>
     </article> -->
-    <Link href="/blog/synopsis">Synopsis</Link>
+    <article class="block-content">
+        <h2 style="margin-top: 1rem;">{synopsis.title}</h2>
+        <BlockContent blocks={synopsis.body} {serializers} />
+    </article>
     <article id="cast-crew" class="about-article">
         <h2>Cast</h2>
         <h3 class="smaller-text" style="margin-top: -1rem; margin-bottom: 1.5rem;">(in order of appearance)</h3>
