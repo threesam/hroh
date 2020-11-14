@@ -353,6 +353,20 @@ p {
   margin-bottom: 1rem;
 }
 
+.block-content a {
+  color: var(--emphasized-text);
+  opacity: 0.8;
+}
+
+.block-content a:hover {
+  opacity: 1;
+  text-shadow: 2px 2px 5px black;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
 .margin-up {
     margin-bottom: 0;
 }
