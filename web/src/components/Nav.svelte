@@ -19,7 +19,7 @@
 	}
 
 	a {
-		font-size: 0.8rem;
+		font-size: 0.85rem;
 		min-width: 60px;
 		font-family: 'norwester';
 		font-weight: 100;
