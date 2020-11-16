@@ -22,5 +22,5 @@
 	}
 </style>			
 <div>
-	<img class="award" src={urlFor(image).maxWidth(200).url()} {alt}>
+	<img class="award" src={urlFor(image).width(200).url()} {alt}>
 </div>
