@@ -30,7 +30,6 @@
     import serializers from '../components/serializers'
 
     export let data
-    console.log(data)
     const {synopsis, patrons } = data
     const {list: patronList} = patrons
     import InternalLink from '../components/InternalLink.svelte'
