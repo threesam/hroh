@@ -10,6 +10,7 @@
           "slug": slug.current, 
           publishedAt, 
           title,
+          excerpt,
           "author": authors[0].author->name,
           "image": mainImage.asset->url,
           "alt": mainImage.alt,
@@ -48,8 +49,9 @@
     margin-top: 1rem;
   }
   a {
+    display: grid;
+    place-content: center;
     position: relative;
-    text-align: left;
     width: 100%;
     height: 400px;
     padding: 2rem;
@@ -64,6 +66,7 @@
     transition: all 0.3s ease-in-out;
   }
   h3 {
+    font-size: 1.5rem;
     text-shadow: 0 0 3px black;
   }
   img {
@@ -83,7 +86,7 @@
   {#if !posts.length}
     <p>...coming soon</p>
   {:else}
-    {#each posts as {title, author, image, alt, slug}}
+    {#each posts as {title, image, alt, slug}}
     <a href={`blog/${slug}`}>
       <h3>{title}</h3>
       <img src={urlFor(image).url()} alt="{alt}">
