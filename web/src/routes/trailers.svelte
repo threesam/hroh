@@ -12,7 +12,7 @@
 	}
 </style>
 
-<Head slug="trailers" />
+<Head slug="trailers" title="Trailers" />
 
 <article class="container">
 	<h1>Trailers</h1>

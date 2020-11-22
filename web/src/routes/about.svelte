@@ -50,7 +50,7 @@
     }
 </style>
 
-<Head slug="about" />
+<Head slug="about" title="About" />
 
 <main class="container">
     <!-- <article id="synopsis" class="about-article">

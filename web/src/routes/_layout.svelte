@@ -2,10 +2,12 @@
 	import Nav from '../components/Nav.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	export let segment = 'Hard Road of Hope';
+	export let segment;
 
 	const capitalize = (string) => {
-		if (!string) return
+		if (!string) {
+			return "Hard Road of Hope"
+		}
 		return string.replace(/^\w/, c => c.toUpperCase());
 	}
 </script>

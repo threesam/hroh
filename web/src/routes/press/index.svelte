@@ -46,7 +46,7 @@
     }
 </style>
 
-<Head slug="press" />
+<Head slug="press" title="Press" />
 
 <main class="container press-container">
     <div class="praise">

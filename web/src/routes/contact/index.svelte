@@ -27,7 +27,7 @@
     }
 </style>
 
-<Head slug="contact" />
+<Head slug="contact" title="Contact" />
 
 <div in:fade={{delay: 500, duration: 1500}} id="brand-ctn">
     <svelte:component this={P5Sketch} {sketch} id="contact-sketch"/>

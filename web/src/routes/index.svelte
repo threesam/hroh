@@ -44,7 +44,7 @@
 	}
 </style>
 
-<Head>
+<Head title="Hard Road of Hope">
 	<script defer rel="preload" type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
 </Head>
 

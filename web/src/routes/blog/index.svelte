@@ -42,7 +42,7 @@
   }
 </script>
 
-<Head slug="blog" />
+<Head slug="blog" title="Blog" />
 
 <style>
   h2 {

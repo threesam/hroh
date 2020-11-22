@@ -33,7 +33,7 @@
         }
 </style>
 
-<Head slug="resources" />
+<Head slug="resources" title="Resources" />
 
 <article id="resources" class="about-article container">
         <h2>Resources</h2>
