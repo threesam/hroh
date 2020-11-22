@@ -77,6 +77,7 @@
     height: 100%;
     z-index: -10;
     object-fit: cover;
+    filter: brightness(40%);
   }
 </style>
 
