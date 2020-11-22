@@ -28,6 +28,8 @@
 <script>
     import BlockContent from '@movingbrands/svelte-portable-text'
     import serializers from '../components/serializers'
+    	import Head from '../components/Head.svelte'
+
 
     export let data
     const {synopsis, patrons } = data
@@ -47,6 +49,8 @@
         margin-bottom: 0;
     }
 </style>
+
+<Head slug="about" />
 
 <main class="container">
     <!-- <article id="synopsis" class="about-article">

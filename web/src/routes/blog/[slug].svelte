@@ -29,12 +29,13 @@
 </script>
 
 <script>
+    import Head from '../../components/Head.svelte'
     import {blur} from 'svelte/transition'
     import BlockContent from '@movingbrands/svelte-portable-text'
     export let post
-    const {title, author, image, alt, publishedAt, slug, excerpt, body} = post
+    const {title, author, image, alt, publishedAt, slug, body} = post
+    const excerpt = post.excerpt[0].children[0].text
 
-    const site = `https://hardroadofhope.com/blog`
     // const url = `${site}/${slug}`
 
     // image url function
@@ -50,16 +51,7 @@
     // }
 </script>
 
-<!-- <svelte:head>
-  <title>{title}</title>
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={excerpt} />
-  <meta property="og:image" content={`${site}/${image}`} />
-  <meta property="og:url" content={url} />
-  <meta property="og:site_name" content="Hard Road of Hope" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image:alt" content={`${title}`} />
-</svelte:head> -->
+<Head {title} image={`${image}?w=640&h=442`} {alt} {excerpt} slug={`blog/${slug}`} />
 
 <style>
     div {

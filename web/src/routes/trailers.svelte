@@ -1,5 +1,6 @@
 <script>
 	import Gumroad from './_Gumroad.svelte'
+	import Head from '../components/Head.svelte'
 </script>
 
 <style>
@@ -10,6 +11,8 @@
 		margin-top: 1rem;
 	}
 </style>
+
+<Head slug="trailers" />
 
 <article class="container">
 	<h1>Trailers</h1>

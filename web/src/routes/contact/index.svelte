@@ -5,6 +5,7 @@
     // import SubscribeButton from "../_SubscribeButton.svelte"		
 
     import sketch from './sketch.js'
+    import Head from '../../components/Head.svelte'
 
     let P5Sketch
     onMount(async () => {
@@ -25,6 +26,8 @@
         }
     }
 </style>
+
+<Head slug="contact" />
 
 <div in:fade={{delay: 500, duration: 1500}} id="brand-ctn">
     <svelte:component this={P5Sketch} {sketch} id="contact-sketch"/>

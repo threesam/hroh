@@ -31,6 +31,7 @@
 	import InternalLink from '../components/InternalLink.svelte'
 	import Laurels from "./_Laurels.svelte"
 	import Hero from "./_Hero.svelte"			
+	import Head from '../components/Head.svelte'
 
 	export let hero
 	const {settings, laurels} = hero
@@ -43,9 +44,10 @@
 	}
 </style>
 
-<svelte:head>
-	<title>{title}</title>
-</svelte:head>
+<Head>
+	<script defer rel="preload" type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
+</Head>
+
 
 <Hero {hero} />
 

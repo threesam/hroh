@@ -33,7 +33,7 @@
 
 <script>
 	import PraiseCard from "./_PraiseCard.svelte"
-					
+	import Head from '../../components/Head.svelte'
 	import PressLink from "./_PressLink.svelte"
 					
     export let data
@@ -45,6 +45,8 @@
         margin-bottom: 0;
     }
 </style>
+
+<Head slug="press" />
 
 <main class="container press-container">
     <div class="praise">

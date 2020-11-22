@@ -27,6 +27,7 @@
 </script>
 
 <script>
+  import Head from '../../components/Head.svelte'
   export let posts
 
   // image url function
@@ -39,6 +40,8 @@
     return builder.image(source)
   }
 </script>
+
+<Head slug="blog" />
 
 <style>
   h2 {

@@ -19,8 +19,10 @@
 </script>
 
 <script>
+        import Head from '../components/Head.svelte'
         export let resources
-        console.log(resources)
+        // console.log(resources.list)
+
 </script>
 
 <style>
@@ -29,6 +31,8 @@
                 margin-top: 1rem;
         }
 </style>
+
+<Head slug="resources" />
 
 <article id="resources" class="about-article container">
         <h2>Resources</h2>

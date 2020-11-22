@@ -351,6 +351,10 @@ p {
   opacity: 0.8;
 }
 
+.block-content img {
+  max-width: 100%;
+}
+
 .block-content a:hover {
   opacity: 1;
   text-shadow: 2px 2px 5px black;

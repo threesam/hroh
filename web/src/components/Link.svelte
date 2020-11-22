@@ -2,6 +2,6 @@
   export let href;
 </script>
 
-<a {href}>
+<a rel="noopener" target="_blank" {href}>
   <slot />
 </a>
