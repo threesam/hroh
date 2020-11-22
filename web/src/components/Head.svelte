@@ -2,7 +2,7 @@
   let BASE_URL = "https://hardroadofhope.com"
   export let title = 'Hard Road of Hope'
   export let excerpt = "A radical and independent film setting the record straight and inspiring the road ahead..."
-  export let image = "https://hardroadofhope.com/images/backingIMG.JPG"
+  export let image = "https://cdn.sanity.io/images/8baclurv/production/f8cb4d7eae497365e7952de6766d0b7a34db4147-3024x3024.jpg?w=640&h=442"
   export let alt = "A picture of a paved forest road"
   export let slug = ""
 </script>
