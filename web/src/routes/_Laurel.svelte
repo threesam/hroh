@@ -28,6 +28,6 @@
 	}
 </style>
 
-	<a {href}>
-		<img class="award" src={urlFor(image).width(200).url()} {alt}>
-	</a>
+<a {href}>
+	<img class="award" src={urlFor(image).width(200).url()} {alt}>
+</a>
