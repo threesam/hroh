@@ -11,7 +11,8 @@
 	const laurels = `*[_type == 'laurel']{
 		title,
 		"image": mainImage.asset->url,
-		"alt": mainImage.alt
+		"alt": mainImage.alt,
+		href
 	}`
 
 	const query = `{
