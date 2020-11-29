@@ -1,6 +1,6 @@
 <script>
 	export let laurel
-	const {image, title, alt} = laurel
+	const {image, href, alt} = laurel
 
 	// image url function
 	import myConfiguredSanityClient from '../sanityClient'
@@ -14,13 +14,20 @@
 </script>
 
 <style>
+	a {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 	img {
 		filter: invert();
 		opacity: 0.8;
 		width: 100%;
 		height: auto;
 	}
-</style>			
-<div>
-	<img class="award" src={urlFor(image).width(200).url()} {alt}>
-</div>
+</style>
+
+	<a {href}>
+		<img class="award" src={urlFor(image).width(200).url()} {alt}>
+	</a>
