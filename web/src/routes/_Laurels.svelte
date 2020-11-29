@@ -7,8 +7,10 @@
 
 <style>
 	section {
+		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		place-content: center;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 		gap: 0.25rem;
 		padding: 0;
 		margin: 3rem 0;
