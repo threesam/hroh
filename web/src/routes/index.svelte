@@ -37,7 +37,6 @@
 
 	export let hero
 	const {settings, laurels} = hero
-	console.log(laurels)
 	const { title, author, description } = settings
 </script>
 
