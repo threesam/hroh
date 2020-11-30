@@ -8,7 +8,8 @@
 		  "author": author->name,
 		  ...
 		}`
-	const laurels = `*[_type == 'laurel']{
+	const laurels = `*[_type == 'laurel']|order(_createdAt desc){
+		...,
 		title,
 		"image": mainImage.asset->url,
 		"alt": mainImage.alt,
@@ -36,6 +37,7 @@
 
 	export let hero
 	const {settings, laurels} = hero
+	console.log(laurels)
 	const { title, author, description } = settings
 </script>
 
