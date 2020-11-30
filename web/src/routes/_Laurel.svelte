@@ -20,6 +20,10 @@
 		right: 0;
 		bottom: 0;
 	}
+	a:hover {
+		transform: scale(0.98);
+		transition: all 0.3s ease-in-out;
+	}
 	img {
 		filter: invert();
 		opacity: 0.8;
