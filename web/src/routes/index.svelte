@@ -115,20 +115,20 @@
 	<span>A film by</span>
 	<h2>{author}</h2>
 	<p>{description}</p>
-					<div class="screenings">
-						<h2>Screenings</h2>
-						<ul>
-							{#each screenings as screening}
-								<li>
-									
-										<h3>{screening.title}</h3>
-										<span>{screening.date.slice(0, 10)}</span>
-										<p>{screening.caption}</p>
-										<a href={screening.laurel}>Learn more</a>
-								<!-- <img src="{screening.image}" alt="{screening.alt}"> -->
-								</li>
-							{/each}
-						</ul>
-					</div>
+		<div class="screenings">
+			<h2>Screenings</h2>
+			<ul>
+				{#each screenings as screening}
+					<li>
+						
+							<h3>{screening.title}</h3>
+							<span>{screening.date.slice(0, 10)}</span>
+							<p>{screening.caption}</p>
+							<a href={screening.laurel}>Learn more</a>
+					<!-- <img src="{screening.image}" alt="{screening.alt}"> -->
+					</li>
+				{/each}
+			</ul>
+		</div>
 	<InternalLink href="/trailers">Trailers</InternalLink>
 </article>
