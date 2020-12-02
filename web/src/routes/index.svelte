@@ -15,10 +15,20 @@
 		"alt": mainImage.alt,
 		href
 	}`
+	
+	const screenings = `*[_type == 'screening']{
+		...,
+		title,
+		"laurel": laurel->href,
+		"image": image.asset->url,
+		"caption": image.caption,
+		"alt": image.alt
+	}`
 
 	const query = `{
 		"settings": ${settings},
-		"laurels": ${laurels}
+		"laurels": ${laurels},
+		"screenings": ${screenings}
 	}`
     return client
       .fetch(query)
@@ -36,20 +46,67 @@
 	import Head from '../components/Head.svelte'
 
 	export let hero
-	const {settings, laurels} = hero
+	const {settings, laurels, screenings} = hero
+	console.log(screenings)
 	const { title, author, description } = settings
+
+	let y
 </script>
 
 <style>
 	article {
 		min-height: calc(100vh - var(--nav-height));
 	}
+
+	li {
+		/* border: 0.125rem solid #333; */
+		border-top: 0.125rem solid #222;
+		position: relative;
+		text-align: left;
+		width: 100%;
+		padding: 2rem;
+	}
+	img {
+		width: 100%;
+		object-fit: contain;
+	}
+	h3 {
+		font-size: 1.4rem;
+		color: var(--main-font-col);
+	}
+	
+	p, a {
+		font-family: "Trebuchet MS",
+    Helvetica,
+    sans-serif;
+	}
+	span {
+		font-family: 'norwester';
+		display: block;
+		margin-bottom: 1rem;
+	}
+	
+	.screenings {
+		margin: 3rem 0 0 0;
+		width: 100%;
+	}
+	a {
+		display: block;
+		margin-top: 1rem;
+		opacity: 0.69;
+		color: var(--emphasized-text);
+	}
+	a:hover {
+		opacity: 1;
+	}
+
 </style>
 
 <Head title="Hard Road of Hope">
 	<script defer rel="preload" type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
 </Head>
 
+<svelte:window bind:scrollY={y} />
 
 <Hero {hero} />
 
@@ -58,5 +115,20 @@
 	<span>A film by</span>
 	<h2>{author}</h2>
 	<p>{description}</p>
+					<div class="screenings">
+						<h2>Screenings</h2>
+						<ul>
+							{#each screenings as screening}
+								<li>
+									
+										<h3>{screening.title}</h3>
+										<span>{screening.date.slice(0, 10)}</span>
+										<p>{screening.caption}</p>
+										<a href={screening.laurel}>Learn more</a>
+								<!-- <img src="{screening.image}" alt="{screening.alt}"> -->
+								</li>
+							{/each}
+						</ul>
+					</div>
 	<InternalLink href="/trailers">Trailers</InternalLink>
 </article>

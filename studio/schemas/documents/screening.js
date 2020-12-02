@@ -11,7 +11,11 @@ export default {
         {
             name: 'date',
             type: 'datetime',
-            title: 'Datetime'
+            title: 'Date/Time',
+            options: {
+                dateFormat: 'MM-DD-YYYY',
+                timeFormat: 'HH:mm',
+            }
         },
         {
             name: 'venue',
@@ -27,6 +31,16 @@ export default {
             name: 'image',
             type: 'mainImage',
             title: 'Image'
+        },
+        {
+            name: 'laurel',
+            type: 'reference',
+            title: 'Laurel',
+            to: [
+                {
+                    type: 'laurel'
+                }
+            ]
         }
     ]
 }
