@@ -48,7 +48,6 @@
 	export let hero
 	const {settings, laurels, screenings} = hero
 	const { title, author, description } = settings
-  console.log("🚀 ~ file: index.svelte ~ line 51 ~ title", title)
 
 	// bind scroll
 	let y

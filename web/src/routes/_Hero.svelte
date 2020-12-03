@@ -2,7 +2,7 @@
 	import CallToAction from "./_CallToAction.svelte"
 					
 	import {onMount} from 'svelte'
-	import {fade} from 'svelte/transition'
+	import {fade, scale} from 'svelte/transition'
 	export let hero
 	const {settings} = hero
 	const {title, image, alt} = settings
@@ -44,6 +44,6 @@
 	{#if show}
 	<h1 in:fade={{delay: 500, duration: 1500}} id="{title}">{title}</h1>
 	<CallToAction/>
+	<img in:fade={{duration:3000}} src={image} {alt}>
 	{/if}
-	<img src={image} {alt}>
 </div>
