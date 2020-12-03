@@ -47,9 +47,10 @@
 
 	export let hero
 	const {settings, laurels, screenings} = hero
-	console.log(screenings)
 	const { title, author, description } = settings
+  console.log("🚀 ~ file: index.svelte ~ line 51 ~ title", title)
 
+	// bind scroll
 	let y
 </script>
 
@@ -65,10 +66,6 @@
 		text-align: left;
 		width: 100%;
 		padding: 2rem;
-	}
-	img {
-		width: 100%;
-		object-fit: contain;
 	}
 	h3 {
 		font-size: 1.4rem;
@@ -102,7 +99,7 @@
 
 </style>
 
-<Head title="Hard Road of Hope">
+<Head {title}>
 	<script defer rel="preload" type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
 </Head>
 
@@ -120,12 +117,10 @@
 			<ul>
 				{#each screenings as screening}
 					<li>
-						
-							<h3>{screening.title}</h3>
-							<span>{screening.date.slice(0, 10)}</span>
-							<p>{screening.caption}</p>
-							<a href={screening.laurel}>Learn more</a>
-					<!-- <img src="{screening.image}" alt="{screening.alt}"> -->
+						<h3>{screening.title}</h3>
+						<span>{screening.date.slice(0, 10)}</span>
+						<p>{screening.caption}</p>
+						<a href={screening.laurel}>Learn more</a>
 					</li>
 				{/each}
 			</ul>
