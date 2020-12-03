@@ -44,6 +44,6 @@
 	{#if show}
 		<h1 id="{title}">{title}</h1>
 		<CallToAction/>
-		<img in:fade={{delay:3000}} src={image} {alt}>
+		<img in:fade={{duration:3000}} src={image} {alt}>
 	{/if}
 </div>
