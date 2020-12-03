@@ -21,6 +21,7 @@
 		place-content: center;
 		text-align: center;
 		background-color: rgba(0,0,0,0.5);
+		overflow: hidden;
 	}
 
 	img {
@@ -44,6 +45,6 @@
 	{#if show}
 		<h1 id="{title}">{title}</h1>
 		<CallToAction/>
-		<img in:fade={{duration:3000}} src={image} {alt}>
+		<img in:scale={{duration:2000, start: 1.2}} src={image} {alt}>
 	{/if}
 </div>

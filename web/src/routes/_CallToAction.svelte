@@ -8,6 +8,6 @@
 	
 </style>
 
-<section in:blur={{delay: 1000, duration: 2000}}>
+<section in:blur={{delay: 500, duration: 1500}}>
 	<Gumroad/>
 </section>
