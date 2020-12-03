@@ -11,6 +11,7 @@
   <slot />
   <meta property="og:title" content={title}>
   <meta property="og:description" content={excerpt}>
+  <meta name="description" content={excerpt}>
   <meta property="og:image" content={image}>
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:secure_url" content={image}>

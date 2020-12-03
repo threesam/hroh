@@ -33,6 +33,6 @@
   }
 </style>
 
-<a {id} {href}>
+<a rel="noopener" {id} {href}>
   <slot />
 </a>
