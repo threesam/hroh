@@ -9,4 +9,4 @@
   }
 </style>
 
-<img src={url} {alt} />
+<img src={url} {alt} loading="lazy"/>

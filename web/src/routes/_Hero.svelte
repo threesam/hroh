@@ -45,6 +45,6 @@
 	{#if show}
 		<h1 id="{title}">{title}</h1>
 		<CallToAction/>
-		<img in:scale={{duration:2000, start: 1.2}} src={image} {alt}>
+		<img in:scale={{duration:2000, start: 1.2, opacity: 0.9}} src={image} {alt}>
 	{/if}
 </div>
