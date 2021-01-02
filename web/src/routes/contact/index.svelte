@@ -50,9 +50,9 @@
     
     <div class="social-links">
         <h4>Follow us here</h4>
-        <a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/activisteleanor"><img
+        <a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/radicaleleanor"><img
                 alt="follow me on twitter" src="icons/twitterIcon.png"></a>
-        <a target="_blank" title="follow me on instagram" href="https://www.instagram.com/activisteleanor"><img
+        <a target="_blank" title="follow me on instagram" href="https://www.instagram.com/radicaleleanor"><img
                 alt="follow me on instagram" src="icons/instagramIcon.png"></a>
     </div>
 </article>
