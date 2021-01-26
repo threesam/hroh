@@ -2,8 +2,8 @@
     import client from '../../sanityClient'
     export async function preload({ params }) {
         const {slug} = params
-        const filter = '*[_type == "post" && slug.current == $slug][0]'
-        const projection = `{
+        const filter = /* groq */`*[_type == "post" && slug.current == $slug][0]`
+        const projection = /* groq */`{
             ...,
             body[]{
                 ...,

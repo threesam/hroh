@@ -3,7 +3,7 @@
 
   export function preload({ params }) {
     // return posts without synopsis
-    const filter = `*[_type == 'post' && title != 'Synopsis']`
+    const filter = `*[_type == 'post' && title != 'Synopsis']|order(_createdAt desc)`
     const projection = `{
           ...,
           "body": body[].children[],
