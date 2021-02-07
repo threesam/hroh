@@ -20,6 +20,7 @@
 		...,
 		title,
 		"laurel": laurel->href,
+		link,
 		"image": image.asset->url,
 		"caption": image.caption,
 		"alt": image.alt
@@ -119,7 +120,7 @@
 						<h3>{screening.title}</h3>
 						<span>{screening.date.slice(0, 10)}</span>
 						<p>{screening.caption}</p>
-						<a href={screening.laurel} title="Visit {screening.title} website">Learn more</a>
+						<a href={screening.link} title="Visit {screening.title} website">Learn more</a>
 					</li>
 				{/each}
 			</ul>

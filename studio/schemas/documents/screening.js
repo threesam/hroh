@@ -23,9 +23,9 @@ export default {
             type: 'string',
         },
         {
-            name: 'address',
-            title: 'Address',
-            type: 'string'
+            name: 'link',
+            title: 'Link',
+            type: 'url'
         },
         {
             name: 'image',
