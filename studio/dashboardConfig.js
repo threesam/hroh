@@ -1,6 +1,7 @@
 export default {
   widgets: [
     {name: 'structure-menu'},
+    { name: 'gumroad' },
     {
       name: 'project-info',
       options: {
@@ -38,10 +39,10 @@ export default {
       }
     },
     {name: 'project-users', layout: {height: 'auto'}},
-    {
-      name: 'document-list',
-      options: {title: 'Recent blog posts', order: '_createdAt desc', types: ['post']},
-      layout: {width: 'medium'}
-    }
+    // {
+    //   name: 'document-list',
+    //   options: {title: 'Recent blog posts', order: '_createdAt desc', types: ['post']},
+    //   layout: {width: 'medium'}
+    // }
   ]
 }
