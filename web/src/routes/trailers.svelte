@@ -20,7 +20,7 @@
 		<iframe title="trailer-latest" src="https://player.vimeo.com/video/398117986" frameborder="0" allow="autoplay; fullscreen"
 		allowfullscreen></iframe>
 	</div>
-	<section>
+	<section id="gumroad-trailers" class="umami--click--gumroad-trailers">
 		<Gumroad/>
 	</section>
 	<div class="vid-wrap">

@@ -8,6 +8,6 @@
 	
 </style>
 
-<section in:blur={{delay: 500, duration: 1500}}>
+<section id="gumroad-hero" class="umami--click--gumroad-hero" in:blur={{delay: 500, duration: 1500}}>
 	<Gumroad/>
 </section>
