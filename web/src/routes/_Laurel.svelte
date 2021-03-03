@@ -27,8 +27,9 @@
 	img {
 		filter: invert();
 		opacity: 0.8;
-		width: 100%;
+		width: auto;
 		height: auto;
+		max-height: 130px;
 	}
 </style>
 

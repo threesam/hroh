@@ -12,9 +12,13 @@
           }`
   
       const patrons = `*[_type == 'patrons'][0]{"list": patron[], message}`
+
+        const author = `*[_type == 'author'][0]`
+
       const query = `{
           "synopsis": ${synopsis},
-          "patrons": ${patrons}
+          "patrons": ${patrons},
+          "author": ${author}
       }`
       return client
         .fetch(query)
@@ -35,6 +39,7 @@
     const {synopsis, patrons } = data
     const {list: patronList} = patrons
     import InternalLink from '../components/InternalLink.svelte'
+import Author from '../components/Author.svelte'
 </script>
 
 <style>
@@ -164,16 +169,9 @@
     </article>
     <article id="about-the-filmmaker">
         <h2>About the Filmmaker</h2>
-        <p>Eleanor is a creative activist and journalist. Her work has appeared on Free Speech TV where she produced
-            and hosted the weekly radical news show, Act Out! for five years. Her print work has appeared via Mint
-            Press News, ROAR, Popular Resistance, RT and more.</p>
-        <br>
-        <p>She is the host of the podcast Act Out! and the co-host of the podcast Common Censored along with Lee
-            Camp.</p>
-        <br>
-        <p>Besides touring, performing and media work, she assists in frontline action organizing and activist
-            trainings.</p>
-        <br>
+        <div class="block-content">
+            <BlockContent blocks={data.author.bio} {serializers} />
+        </div>
     </article>
     <InternalLink href="/resources">Resources</InternalLink>
 </main>
