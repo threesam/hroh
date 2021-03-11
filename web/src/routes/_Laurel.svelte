@@ -34,5 +34,5 @@
 </style>
 
 <a rel="noopener" target="_blank" {href}>
-	<img class="award" src={urlFor(image).width(200).url()} {alt} loading="lazy" />
+	<img class="award" src={urlFor(image).width(160).url()} {alt} loading="lazy" />
 </a>
