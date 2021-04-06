@@ -119,8 +119,12 @@
 					<li>
 						<h3>{screening.title}</h3>
 						<span>{screening.date.slice(0, 10)}</span>
-						<p>{screening.caption}</p>
-						<a href={screening.link} title="Visit {screening.title} website">Learn more</a>
+						{#if screening.caption}
+							<p>{screening.caption}</p>
+						{/if}
+						{#if screening.link && screening.title}
+							<a href={screening.link} title="Visit {screening.title} website">Learn more</a>
+						{/if}
 					</li>
 				{/each}
 			</ul>
