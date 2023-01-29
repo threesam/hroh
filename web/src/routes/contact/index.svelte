@@ -81,9 +81,13 @@
 <style>
   figure {
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+  }
+  figure img {
+    max-width: 100%;
   }
   .social-links {
     margin: 2rem;
