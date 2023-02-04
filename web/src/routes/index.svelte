@@ -16,7 +16,7 @@
 		href
 	}`;
 
-    const screenings = `*[_type == 'screening']{
+    const screenings = `*[_type == 'screening']|order(date asc){
 		...,
 		title,
 		"laurel": laurel->href,
